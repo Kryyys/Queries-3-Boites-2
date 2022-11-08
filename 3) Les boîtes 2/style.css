@@ -1,0 +1,62 @@
+@media screen and (max-width: 375px) {
+    main {
+        display: flex;
+        justify-content: space-around;
+        border: 1px solid black;
+    }
+
+    /* nth-child(even) fonctionnait aussi ! */
+    div:nth-of-type(even) {
+        display: none;
+    }
+    
+    div {
+        background-color: aqua;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        margin: 20px;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    main {
+        display: flex;
+        justify-content: space-around;
+        border: 1px solid black;
+    }
+    
+    div {
+        background-color: aqua;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        margin: 20px;
+}}
+
+@media screen and (min-width: 769px) {
+    main {
+        display: flex;
+        justify-content: space-around;
+        border: 1px solid black;
+    }
+
+    div:nth-of-type(odd) {
+        display: none;
+    }
+    
+    div {
+        background-color: aqua;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        margin: 20px;
+    }
+}
+
+p{
+    padding: 20px;
+}
